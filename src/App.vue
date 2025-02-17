@@ -27,7 +27,7 @@
   <!-- Footer con botones -->
   <footer class="footer-buttons">
     <!-- Botón GitHub: redirige al repositorio -->
-    <a href="https://github.com/tu-usuario/tu-repositorio" target="_blank" title="Repositorio del proyecto">
+    <a href="https://github.com/fernandosteven95/DAR-Actividad03" target="_blank" title="Repositorio del proyecto">
       <IconBrandGithub stroke="2" size="32" />
     </a>
     <!-- Botón PDF: redirige a la memoria explicativa -->
