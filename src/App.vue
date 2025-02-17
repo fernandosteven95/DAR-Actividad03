@@ -183,9 +183,9 @@ export default {
 <style>
 #app {
   min-height: 100vh;
-  background-color: #1a1a1a;
   color: #fff;
-  background: url('@/assets/fondo.png') no-repeat center center fixed;
+  background-color: #333; /* Color de fondo para que se vea detrás */
+  background: url('/src/assets/fondo.png') repeat center center;
   background-size: cover;
   padding: 2em;
 }
