@@ -6,20 +6,13 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    vueDevTools(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    },
-  },
-})
-
-module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
+  plugins: [vue()],
+  // Configurar la ruta base si es necesario
+  base: process.env.NODE_ENV === 'production'
       ? '/DAR-Actividad03/'
-      : '/'
-}
-
+      : '/',
+  build: {
+    // Establece el directorio de salida a "docs"
+    outDir: 'docs'
+  }
+})
